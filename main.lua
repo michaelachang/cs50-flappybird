@@ -162,6 +162,7 @@ function love.update(dt)
 
     love.keyboard.keysPressed = {}
     love.mouse.buttonsPressed = {}
+
 end
 
 function love.draw()
