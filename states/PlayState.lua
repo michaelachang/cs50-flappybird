@@ -114,12 +114,14 @@ function PlayState:update(dt)
             self.pause = true
             gScrolling = false
             sounds['music']:pause()
+            sounds['pause']:play()
             
         else
             -- when unpaused
             self.pause = false
             gScrolling = true
             sounds['music']:play()
+            sounds['pause']:play()
         end
     end
 end
